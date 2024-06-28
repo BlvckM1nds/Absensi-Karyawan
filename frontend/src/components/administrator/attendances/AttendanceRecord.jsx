@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import { calculateTimeDifference, formatDate, formatTime } from "../../../utils/formatDatetime";
 
 const AttendanceRecord = ({ attendance, index }) => {
-  const { id, full_name, evidence, created_at, last_modified, status } = attendance;
+  const { full_name, evidence, created_at, last_modified, status } = attendance;
 
   return (
-    <tr key={id}>
+    <tr className="bg-white border-b duration-200 text-primary hover:bg-cloud/25">
       <td className="text-center py-4">
         {index + 1}
       </td>
