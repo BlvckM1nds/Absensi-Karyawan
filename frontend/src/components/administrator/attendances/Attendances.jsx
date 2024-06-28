@@ -70,7 +70,7 @@ const Attendances = () => {
                     ))
                   ) : (
                     <tr className="text-center">
-                      <td colSpan="6" className="py-4 text-lg text-primary/60 font-medium">Data absen tidak ditemukan.</td>
+                      <td colSpan="8" className="py-4 text-lg text-primary/60 font-medium">Data absen tidak ditemukan.</td>
                     </tr>
                   )}
                 </tbody>

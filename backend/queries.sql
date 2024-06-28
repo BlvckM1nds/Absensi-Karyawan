@@ -55,9 +55,7 @@ SET
     created_at = '2024-05-28 00:14:40'
 WHERE
     user_id = 1;
-    
-DELETE FROM attendances WHERE id = '4';
-    
+
 DELIMITER //
 
 CREATE TRIGGER update_user_last_modified
