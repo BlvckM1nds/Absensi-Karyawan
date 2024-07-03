@@ -4,7 +4,6 @@ import Button from "../../ui/Button";
 const DeleteUserModal = ({ user, onDeleteUserModal }) => {
   const handleConfirm = async event => {
     event.preventDefault();
-    console.log(user?.id);
 
     try {
       await axiosInstance.delete(`/users/${user?.id}`);

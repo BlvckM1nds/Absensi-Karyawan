@@ -14,7 +14,6 @@ const CheckInModal = ({ onCheckInModal, onRefetch }) => {
     var reader = new FileReader();
     reader.onloadend = function () {
       setPreview(reader.result);
-      console.log(reader.result);
     };
 
     reader.readAsDataURL(file);

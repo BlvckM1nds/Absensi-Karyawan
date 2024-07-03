@@ -6,7 +6,6 @@ import { useUser } from "../contexts/UserContext";
 const Home = () => {
   const navigate = useNavigate();
   const { user } = useUser();
-  console.log(user);
 
   return (
     <Container>

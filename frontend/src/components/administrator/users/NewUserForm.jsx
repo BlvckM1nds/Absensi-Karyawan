@@ -25,9 +25,8 @@ const NewUserForm = ({ onNewUserForm }) => {
     event.preventDefault();
 
     try {
-      const { data: { data: res } } = await axiosInstance.post("/users", payload);
+      await axiosInstance.post("/users", payload);
 
-      console.log(res);
       onNewUserForm(false);
     } catch (error) {
       console.error(error);

@@ -1,3 +1,8 @@
 */node_modules/
 */.env
 *.pdf
+*.jpg
+*.jpeg
+*.png
+*.sql
+*.xls*

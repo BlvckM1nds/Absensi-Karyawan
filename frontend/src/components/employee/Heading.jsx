@@ -44,8 +44,6 @@ const Heading = ({ attendances, onRefetch, onCheckInModal }) => {
         await axiosInstance.put(`/attendances/${currentUserAttendances[0]?.id}/stop`);
 
         (async () => await onRefetch(true))();
-
-        console.log("Checked Out!");
       } catch (error) {
         console.error(error);
       };
@@ -79,8 +77,8 @@ const Heading = ({ attendances, onRefetch, onCheckInModal }) => {
             <li className="flex gap-x-5 text-primary/60">
               Nomor Telpon<span className="font-medium text-primary">{user?.phone}</span>
             </li>
-            <li className="flex gap-x-5 text-primary/60">
-              Alamat<span className="font-medium text-primary">{user?.address}</span>
+            <li className="flex gap-x-5 text-primary/60 max-w-2xl">
+              Alamat<span className="font-medium text-primary truncate">{user?.address}</span>
             </li>
           </ul>
         </div>
